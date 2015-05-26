@@ -1,0 +1,16 @@
+<html ng-app="App" ng-controller="homeController">
+<header ng-include="'../../partials/header/headerView.html'"></header>
+<div>
+    <form action="subtype1.php" method="post">
+
+    <div class="subtype1" ng-repeat="x in names"><input type="submit"  value="{{ x.Name }}" style="background-image: url(../../../assets/images/zipsubtypes1/{{ x.Name }}.jpg);"></div>
+    </form>
+</div>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script src="../../../assets/lib/angular/angular.js"></script>
+<script src="../../../assets/lib/angular/angular-route.js"></script>
+<script src="../../app.js"></script>
+<script src="homeController.js"></script>
+<footer ng-include="'../../partials/footer/footerView.html'"></footer>
+</body>
+</html>
