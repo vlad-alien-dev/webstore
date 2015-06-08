@@ -1,127 +1,18 @@
-/*#region Reset*/
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-/*html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}*/
-/*#region Reset*/
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.3em; }
-h4 { font-size: 1em; }
-h5 { font-size: 0.8em; }
-h6 { font-size: 0.7em; }
-h1,h2,h3,h4,h5,h6,th{
-	font-weight:bold;
-	font-family: 'Roboto', sans-serif;
+.gridStyle {
+	border: 1px solid rgb(212,212,212);
+	width: 700px;
+	min-height: 300px
 }
 
-html, body{
-	padding:0;
-	margin:0;
-}
-table{
-	width:100%;
-
-}
-table, tr, td {
-	border: 1px solid;
-	border-collapse: collapse;
-}
-td {
-	height: 48px;
-	border:1px solid #eee;
-	color: #000;
-}
-th{
-	border-left: 1px solid #800!important;
-	border-bottom: 1px solid #800!important;
-	color: #fff;
-	background:#500;
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
 }
 
-colspan{
-	background: #ddd!important;
+ng\:form {
+	display: block;
 }
-tr:first-child {
-	background: antiquewhite;
-}
-tr:nth-child(2n) {
-	background: ;
-}
-
-.hover { background-color: aquamarine!important; }
-table{
-	position: absolute;
-}
-.header-fixed{
-	position: fixed;
-	top: 0px;
-}
-.above-header{
-	height:120px;
-	background:#e58;
-	color:#fff;
-}
-th {
-	font-size: 15px;
-	font-weight: 100;
-}
-
-th:nth-child(1),td:nth-child(1){
-	width: 35px;
-	padding: 0 15px;
-}
-th:nth-child(2), td:nth-child(2) {
-	width: 98px;
-}
-
-th:nth-child(3), td:nth-child(3) {
-	padding: 0 15px;
-	margin: 0;
-	width: 30px;
-}
-
-td:nth-child(2),td:nth-child(3) {
-	background: #b7b7b7;
-}
-td:nth-child(3){
-	font-size: 25px;
-	font-weight: 100;
-}
-td, th {
-	width: 39px;
-	text-align: center;
-}
-td:hover {
-	background: rgb(98, 179, 119);
-}
-.subtype1 {
-	float:left;
-}
-.subtype1 input[type="submit"]{
-	width: 190px;
-	height: 190px;
-	background: #fff;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
-	color: rgba(240, 248, 255, 0);
-}
-.subtype1 input[type="submit"]:hover{
-	color: rgba(240, 248, 255, 1);
-	background: rgba(100,100,100, 1);
-	background-image: none!important;
-	font-size: 23px;
-}
-span {
-	display: inline-block;
-	border: 1px rgba(136, 0, 0, 0.57) solid;
-	padding: 2px 6px 9px 5px;
-	border-radius: 20px;
-	width: 10px;
-	height: 10px;
-	color: rgba(136, 0, 0, 0.57);
-}
-form {
-	width: 1000px;
-	margin: 0px auto;
+.colorImage {
+	height: 45px;
+	width: 67px;
+	margin: 1px;
 }

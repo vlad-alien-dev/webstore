@@ -1,3 +1,7 @@
-app.controller('headerController', function($scope) {
-    $scope.firstName = "John";
-});
+'use strict';
+
+app.controller('headerController',
+    function ($scope){
+        $scope.pageTitle=""
+    }
+);

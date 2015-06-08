@@ -1,18 +1,8 @@
-<div ng-app="App" ng-controller="headerController">
 <div class="above-header"><h1><a ng-href="" style="margin:40px; color:#fff;text-decoration: none;">ZipShop</a></h1></div>
 
-
-<link rel="stylesheet" type="text/css" href="header.css">
-<script src="../../../assets/lib/angular/angular.js"></script>
-<script src="../../app.js"></script>
-<script src="../header/headerController.js"></script>
-
 </div>
 
 
-Ads<span ng-if="pageTitle"> &ndash; {{pageTitle}}</span>
+<span ng-if="pageTitle"> &ndash; {{pageTitle}}</span>
 
-<div ng-if="authService.isLoggedIn()" class="user-area">
-    <span>{{authService.getCurrentUser().username}}</span>
-    <a ng-click="logout()" class="link">Logout</a>
-</div>
+

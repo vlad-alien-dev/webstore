@@ -1,0 +1,28 @@
+
+
+<p ng-model="name">{{name}}</p>AAA
+    <h1>a{{ message }}</h1>
+<div>
+    <div class="subtype1" ng-repeat="x in colors">
+
+        <div class='wrap'>
+            <div class = "blocks left">
+                <img src="../assets/images/zippers/{{ x.Index }}.jpg">
+            </div>
+            <div class = "blocks">
+                {{ x.Index }}&nbsp;<br/>
+                + {{(x.Price| number:2) + " лв." }}
+            </div>
+            <div class = "blocks">
+                <input type="hidden" ng-model="$index">
+                <div ><input type="number" min="0" ng-model="numericValue[$index]"></div>
+
+                <b>+ {{ ((numericValue[$index]*x.Price)| number:2) + " лв." }}</b>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<h2>Sum: <span ng-bind="sum()"></span></h2>
